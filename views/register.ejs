@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<h1>Register Page</h1>
+<div class="registerBox">
+<form action="/register" method="post">
+    <label for="firstname">First Name</label><br>
+    <input type="text" placeholder="First Name" name="firstname"><br><br>
+    <label for="lastname">Last Name</label><br>
+    <input type="text" placeholder="Last Name" name="lastname"><br><br>
+    <label for="email">Email</label><br>
+    <input type="email" placeholder="Enter Email" name="email"><br><br>
+    <label for="contactno">Contact Number</label><br>
+    <input type="number" placeholder="Contact no" name="contactno"><br><br>
+    <label for="password">Password</label><br>
+    <input type="password" placeholder="Enter Password" name="password"><br><br>
+    <button>Register</button>
+</form>
+</div>
+
+<h1><a href="/">Back</a></h1>
+<%- include("partials/footer") %>

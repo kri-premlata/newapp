@@ -1,0 +1,20 @@
+// 1. Create a form in homepage -> /
+//           form must include input(filename) and button with method post and action "/create"
+
+//2. Make a post route of "/create" in "index.js" now create a folder name "upload" in public folder, and 
+// using path package send "path" of the .../upload/filename.ext to browser,
+//e.g => let filepath = path.join(__dirname, "..", "public", "upload", req.body.filename)
+// output:- "abc/public/upload/index.html"
+
+ 3. Use "fs" package to and create an empty file on the same path given above 
+// and message to browser "file created!"
+
+//4. Edit the "/create" post route and instead of sending "file created!" redirect 
+// the route to "/" existing get route:-
+//  e.g res.redirect("/")   // existing get route
+
+// 5. Edit the "/" get route and read the directory "upload" with "path" 
+//     and "fs" package and console.log(...) it in terminal
+
+// 6. Re-edit the again the "/" get route & render the files(array) to render &
+//  with the help of forEach show the list of the files in "index.ejs"

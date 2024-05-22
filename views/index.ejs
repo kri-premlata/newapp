@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+
+<!-- <ul>
+    <a href="/user/1">user1</a><br><br>
+    <a href="/user/2">user2</a><br><br>
+    <a href="/user/3">user3</a><br><br>
+    <a href="/user/4">user4</a><br><br>
+    <a href="/user/5">user5</a><br><br>
+  </ul> -->
+
+<nav>
+  <a href="/">HomePage</a><br /><br />
+  <a href="/register">Register</a><br /><br />
+  <a href="/login">LoginPage</a><br /><br />
+</nav>
+
+<!-- Class 14 -->
+<div class="homeContent">
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <div class="image"></div>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quaerat
+    alias, necessitatibus voluptatem illum vero nisi voluptatum doloribus
+    aliquam temporibus hic nesciunt fuga vitae, ullam sequi magni earum non
+    totam.
+  </p>
+</div>
+
+<div class="homeForm">
+  <form action="/create" method="post">
+    <input type="text" placeholder="filename" name="filename" /><br /><br />
+    <button>Submit</button>
+  </form>
+</div>
+
+<!-- CLASS 15 -->
+<ul>
+  <% files.forEach((file)=>{ %>
+    <a href="/file/<%= file %>"><%= file %></a>
+  <% }) %>
+</ul>
+<%- include("partials/footer") %>
